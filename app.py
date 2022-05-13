@@ -5,7 +5,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-command = ["dig","+short","myip.opendns.com","@resolver1.opendns.com"]
+command = ["dig","+short","ch","txt","whoami.cloudflare","@1.1.1.1"]
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
